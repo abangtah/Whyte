@@ -1,0 +1,55 @@
+.service-strip-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 14px 0;
+  position: relative;
+  user-select: none;
+}
+
+.service-strip-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: strip-marquee 32s linear infinite;
+}
+
+.service-strip-track:hover {
+  animation-play-state: paused;
+}
+
+.strip-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.strip-accent-dot {
+  color: var(--accent-lime);
+  font-size: 1.1rem;
+}
+
+.strip-text {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.strip-item:hover .strip-text {
+  color: var(--accent-lime);
+}
+
+@keyframes strip-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,166 @@
+.about-section {
+  background-color: var(--bg-secondary);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.3fr;
+  gap: 56px;
+  align-items: start;
+}
+
+@media (max-width: 960px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* Left Column Card */
+.about-identity-card {
+  padding: 36px 32px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.identity-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  font-size: 0.72rem;
+}
+
+.identity-tag {
+  color: var(--text-subtle);
+}
+
+.identity-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent-lime);
+}
+
+.identity-hero-monogram {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-medium);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.mono-initials {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.05em;
+}
+
+.mono-accent-circle {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--accent-lime);
+  box-shadow: 0 0 12px var(--accent-lime);
+}
+
+.identity-info-box {
+  margin-bottom: 28px;
+}
+
+.identity-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.identity-title {
+  font-size: 0.8rem;
+  color: var(--accent-lime);
+  line-height: 1.45;
+}
+
+.identity-badges-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 20px;
+}
+
+.id-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* Right Column Narrative */
+.about-narrative-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.narrative-body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+.narrative-body p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.operating-principles-box {
+  padding: 24px 28px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+}
+
+.principles-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.74rem;
+  color: var(--accent-lime);
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.principles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.principle-item {
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.principle-title {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.principle-text {
+  color: var(--text-muted);
+}
